@@ -42,18 +42,22 @@ void loop() {
               case 49:
                 Serial.println("Push pin down");
                 myservo.write(10);
+                delay(100);
                 break;
               case 50:
                 Serial.println("Pull pin up");
                 myservo.write(90);
+                delay(100);
                 break;
               case 51:
                 Serial.println("Self Test");
                 myservo.write(120);
+                delay(100);
                 break;
               case 52:
                 Serial.println("Alarm Release & Touch SW Mode");
                 myservo.write(60);
+                delay(100);
                 break;
             }
     }
@@ -63,4 +67,5 @@ void touch() {
   Serial.println("Touch");
   state = !state;
 }
+
 
